@@ -40,7 +40,7 @@
 
     function chooseTarget(enemies) {
       let target = null;
-      // Pick the living enemy with the greatest health (not maximum).
+      // Pick the living enemy with the greatest health (not maximum)
       for (const enemy of enemies) {
   
         if (enemy.health > 0){ //If health is zero, enemy is not alive
@@ -51,7 +51,8 @@
           continue;
         }
 
-        if (target == null) {
+        if (target == null) { //for first enemy being looked at
+          console.log("enemy is null")
           target = enemy;
         }
       }
